@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contact-section">
+        <div class="contact-form">
+
+            <h2>Let me know <br> how I can help you!</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="ed8ac29c-1a4f-4153-82df-f61b2d37e0bc">
+
+                <label for="name">Your name</label> <br>
+                <input type="text" name="name" required> <br>
+                <label for="email">Your e-mail</label> <br>
+                <input type="email" name="email" required> <br>
+                <label for="email">Subject</label> <br>
+                <input type="text" name="subject" /> <br>
+                <label for="message">Your message</label> <br>
+                <textarea name="message" required></textarea> <br>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <button type="submit">Send Message</button>
+
+            </form>
+        </div>
+        <div class="contact-circle">
+            <img src="assets/images/call-me-maybe.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
