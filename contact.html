@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <script src="assets/javascript/script.js"></script>
 </head>
+
 <body>
+  <header>
+    <div class="logo"></div>
+    <nav>
+      <ul class="ul-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="art.html">Art</a></li>
+        <li><a href="exhibitions.html">Exhibitions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Comtact form -->
   <div class="contact-section">
-        <div class="contact-form">
+    <div class="contact-form">
 
-            <h2>Let me know <br> how I can help you!</h2>
-            <form action="https://api.web3forms.com/submit" method="POST">
+      <h2>Let me know <br> how I can help you!</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
 
-                <input type="hidden" name="access_key" value="ed8ac29c-1a4f-4153-82df-f61b2d37e0bc">
+        <input type="hidden" name="access_key" value="ed8ac29c-1a4f-4153-82df-f61b2d37e0bc">
 
-                <label for="name">Your name</label> <br>
-                <input type="text" name="name" required> <br>
-                <label for="email">Your e-mail</label> <br>
-                <input type="email" name="email" required> <br>
-                <label for="email">Subject</label> <br>
-                <input type="text" name="subject" /> <br>
-                <label for="message">Your message</label> <br>
-                <textarea name="message" required></textarea> <br>
-                <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                <button type="submit">Send Message</button>
+        <label for="name">Your name</label> <br>
+        <input type="text" name="name" required> <br>
+        <label for="email">Your e-mail</label> <br>
+        <input type="email" name="email" required> <br>
+        <label for="email">Subject</label> <br>
+        <input type="text" name="subject" /> <br>
+        <label for="message">Your message</label> <br>
+        <textarea name="message" required></textarea> <br>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <button type="submit">Send Message</button>
 
-            </form>
-        </div>
+      </form>
     </div>
+  </div>
+
+  <footer>
+    <div>
+      <h4>Social media</h4>
+      <!-- Social media links -->
+      <a href="#"></a>
+      <a href="#"></a>
+    </div>
+    <div>
+      <a href="#"><img src="#" alt="Zoja Golubeva logo"></a>
+    </div>
+    <address>
+      <!-- put the link for the ABOUT section into the link below -->
+      Portfolio of <a href="#">Zoja Golubeva</a>
+      Tel.: <a href="tel:+37126322445">+37126322445</a>
+      <!-- put the link for the contact form into the link below -->
+      Email: <a href="contact.html">...</a>
+    </address>
+  </footer>
+
+
 </body>
+
 </html>
