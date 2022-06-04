@@ -3,3 +3,92 @@
 
 /* Abbreviations: */
 
+
+:root{
+  --color:#000000;
+}
+
+/* Universal CSS */
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+.logo{
+  position: relative;
+  left: 10px; 
+  /* change the pixels to how far from left the logo should be */
+}
+
+.ul-nav{
+  list-style-type: none;
+}
+li{
+  display: inline;
+}
+
+/* Home page */
+
+.categories-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'paintings drawings '
+  'graphics installations';
+}
+
+.paintings{
+  grid-area: paintings;
+}
+
+.drawings{
+  grid-area: drawings;
+}
+
+.graphics{
+  grid-area: graphics;
+}
+
+.installations{
+  grid-area: installations;
+}
+
+.about-artist-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'aboutH2 aboutH2'
+  'article artistImage '
+  'btnReadmore artistImage';
+}
+
+.about-h2{
+  grid-area: aboutH2;
+}
+
+.about-article{
+  grid-area: article;
+
+}
+
+.artist-image {
+  grid-area: artistImage;
+}
+
+.btn-readmore{
+  grid-area: btnReadmore;
+}
+/* About page */
+
+
+/* Art page */
+
+
+/* Exhibitions page */
+
+
+/* Contact page */
