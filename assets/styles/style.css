@@ -2,7 +2,11 @@
 /* CSS Document*/
 
 /* Abbreviations: */
+/* zg- Zoja Golubeva
+  arc- article
+  btn- button
 
+ */
 
 /* For design:
 --purple for headings and buttons
@@ -14,6 +18,10 @@
   --background: #F8F5F2;
 }
 
+/*Importing Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 /* Universal CSS */
 body{
   margin: 0;
@@ -22,6 +30,7 @@ body{
   background-color: var(--background);
   background-image: url("../images/wall.jpg");
   color: var(--green);
+  font-family: 'Oxygen', sans-serif;
 }
 
 body::before {
@@ -34,9 +43,7 @@ a{
   font-style: normal;
 }
 
-.logo{
-  position: relative;
-}
+
 
 /* test */
 .imagelogo {
@@ -44,27 +51,49 @@ a{
 }
 
 header{
-  width: 80vw;
+  /* width: 80vw; */
   margin: 0 auto;
 }
 
 nav {
+  margin: 0;
+  padding: 0;
   display: flex;
-  width: 60vw;
+  width: auto;
   justify-content: center;
 }
 
-
 .ul-nav{
-  list-style-type: none;
+  list-style: none;
+  text-align: center;
 }
+
 li{
-  display: inline;
+  display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 /* Home page */
+
+.hero-wrapper {
+  height: 150px;
+}
+
+.img-zg{
+  height:150px;
+  display: inline-block;
+}
+
+.hero-article{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.art-zg{
+  font-weight: 600;
+}
 
 .categories-grid{
   display: grid;

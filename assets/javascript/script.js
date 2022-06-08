@@ -20,7 +20,7 @@ fetch('https://www.dgolubeva.com/wp-json/jwt-auth/v1/token', {
         token = tokenData.data.token;
     })
     .then(() => {
-        fetch('https://www.dgolubeva.com/wp-json/wp/v2/posts?status=private', {
+        fetch('https://www.dgolubeva.com/wp-json/wp/v2/posts?status=private&per_page=100', {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`
@@ -37,5 +37,22 @@ fetch('https://www.dgolubeva.com/wp-json/jwt-auth/v1/token', {
 
             });
     })
+    .then(() => {
+      fetch('https://www.dgolubeva.com/wp-json/wp/v2/posts?status=private&per_page=100&offset=100', {
+          method: 'GET',
+          headers: {
+              Authorization: `Bearer ${token}`
+          }
+      })
+          .then(response => response.json())
+          .then(data3 => {
+              console.log(data3);
+              myArtName = document.querySelector('#myArtName');
+              myArtName.innerHTML = `${data3[8].acf.name}`;
 
+              // myImage = document.querySelector(`#recipe-img`);
+              // myImage.innerHTML = `<img src="${data2[8].acf.image_url}">`;
+
+          });
+  })
 
