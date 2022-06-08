@@ -4,8 +4,14 @@
 /* Abbreviations: */
 
 
+/* For design:
+--purple for headings and buttons
+--green for the body text and navigation */
+
 :root{
-  --color:#000000;
+  --purple:#453A49; 
+  --green: #32341E;
+  --background: #F8F5F2;
 }
 
 /* Universal CSS */
@@ -13,7 +19,19 @@ body{
   margin: 0;
   padding: 0;
   width: 100%;
-  
+  background-color: var(--background);
+  background-image: url("../images/wall.jpg");
+  color: var(--green);
+}
+
+body::before {
+  content: "";
+  height: 100vh;
+  width: 100%;
+}
+
+a{
+  font-style: normal;
 }
 
 .logo{
@@ -33,6 +51,7 @@ header{
 nav {
   display: flex;
   width: 60vw;
+  justify-content: center;
 }
 
 .ul-nav{
@@ -42,7 +61,6 @@ li{
   display: inline;
   padding-left: 10px;
   padding-right: 10px;
-
 }
 
 /* Home page */
