@@ -30,10 +30,10 @@ fetch('https://www.dgolubeva.com/wp-json/jwt-auth/v1/token', {
             .then(data2 => {
                 console.log(data2);
                 myArtName = document.querySelector('#myArtName');
-                myArtName.innerHTML = `${data2[8].acf.name}`;
+                myArtName.innerHTML = `${data2[5].acf.name}`;
 
-                // myImage = document.querySelector(`#recipe-img`);
-                // myImage.innerHTML = `<img src="${data2[8].acf.image_url}">`;
+                myImage = document.querySelector(`#single-art-img`);
+                myImage.innerHTML = `<img src="${data2[5].acf.picture.url}">`;
 
             });
     })

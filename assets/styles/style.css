@@ -156,3 +156,12 @@ li{
 
 
 /* Contact page */
+
+/* Single art page */
+
+.single-art-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
