@@ -18,8 +18,21 @@ body{
 
 .logo{
   position: relative;
-  left: 10px; 
-  /* change the pixels to how far from left the logo should be */
+}
+
+/* test */
+.imagelogo {
+  height: 30px;
+}
+
+header{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  width: 60vw;
 }
 
 .ul-nav{
@@ -27,6 +40,9 @@ body{
 }
 li{
   display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
 
 /* Home page */
