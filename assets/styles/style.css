@@ -87,6 +87,7 @@ li{
 /* Home page */
 
 .hero-wrapper {
+  display: inline-block;
   height: 150px;
 }
 
@@ -99,6 +100,7 @@ li{
   font-family: 'Quicksand', sans-serif;
   font-weight: normal;
   display: inline-block;
+  
 }
 
 .art-zg{
