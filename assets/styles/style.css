@@ -33,11 +33,20 @@ body{
   font-family: 'Oxygen', sans-serif;
 }
 
-body::before {
-  content: "";
-  height: 100vh;
+/* body::before {
+  content: ""; */
+  /* height: 100vh;
   width: 100%;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(248, 245, 242, 0.6);
+} */
 
 a{
   font-style: normal;
@@ -51,7 +60,6 @@ a{
 }
 
 header{
-  /* width: 80vw; */
   margin: 0 auto;
 }
 
@@ -81,7 +89,7 @@ li{
 }
 
 .img-zg{
-  height:150px;
+  width: 50vw;
   display: inline-block;
 }
 
