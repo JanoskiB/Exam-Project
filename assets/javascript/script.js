@@ -47,8 +47,8 @@ fetch('https://www.dgolubeva.com/wp-json/jwt-auth/v1/token', {
           .then(response => response.json())
           .then(data3 => {
               console.log(data3);
-              myArtName = document.querySelector('#myArtName');
-              myArtName.innerHTML = `${data3[8].acf.name}`;
+            //   myArtName = document.querySelector('#myArtName');
+            //   myArtName.innerHTML = `${data3[5].acf.name}`;
 
               // myImage = document.querySelector(`#recipe-img`);
               // myImage.innerHTML = `<img src="${data2[8].acf.image_url}">`;
