@@ -57,6 +57,8 @@ a{
 /* test */
 .imagelogo {
   height: 30px;
+  position: relative;
+  top: 15px;
 }
 
 header{
