@@ -167,13 +167,25 @@ li{
 
 /* Single art page */
 
+#myArtName{
+  padding-left: 3rem;
+}
+
 .single-art-div{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
 }
 
 #single-art-img>img{
-  width: 100%;
+  width: 90%;
+}
+
+#single-art-info{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
