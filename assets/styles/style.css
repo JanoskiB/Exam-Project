@@ -103,6 +103,10 @@ li>a{
   color: var(--green);
 }
 
+li>a:hover{
+  text-decoration: underline;
+}
+
 /* Home page */
 
 .hero-wrapper-grid {
@@ -135,6 +139,11 @@ li>a{
 .art-zg{
   font-weight: 600;
   font-size: 3rem;
+}
+
+.art-categories{
+  margin-top: 5rem;
+  margin-left: 5rem;
 }
 
 .categories-grid{
