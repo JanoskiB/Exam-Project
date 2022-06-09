@@ -23,15 +23,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /* Universal CSS */
+
+html{
+  background: url(../images/wall.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body{
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: var(--background);
+  /* background-color: var(--background);
   background-image: url("../images/wall.jpg");
+  background-repeat: no-repeat;
+  background-size: auto; */
   color: var(--green);
   font-family: 'Oxygen', sans-serif;
 }
+
+
 
 /* body::before {
   content: ""; */
@@ -94,6 +107,11 @@ li{
 .img-zg{
   width: 50vw;
   display: inline-block;
+  border-radius: 0 48% 48% 0;
+  -webkit-border-radius: 0 48% 48% 0;
+  -moz-border-radius: 0 48% 48% 0;
+  -ms-border-radius: 0 48% 48% 0;
+  -o-border-radius: 0 48% 48% 0;
 }
 
 .hero-article{
