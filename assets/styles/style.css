@@ -41,7 +41,7 @@ body {
   background-repeat: no-repeat;
   background-size: auto; */
   color: var(--green);
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -61,25 +61,34 @@ body {
   background-color: rgba(248, 245, 242, 0.6);
 } */
 
-a {
+.nav-a {
   font-style: normal;
   text-transform: uppercase;
-  font-family: 'Quicksand', sans-serif;
   font-size: 20pt;
   text-decoration: none;
   color: #32341E;
 }
 
-a:hover {
+.nav-a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.nav-a:active {
   text-decoration: underline;
 }
 
-a:active {
-  text-decoration: underline;
-}
-
-h2, h3 {
+h2, h3, h4 {
+  font-family: 'Oxygen', sans-serif;
   text-transform: uppercase;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.3rem;
 }
 
 
@@ -160,40 +169,69 @@ li>a:hover {
 }
 
 /* Art categories */
-.art-categories {
-  margin: 5rem;
+
+.category-a{
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #32341E;
+}
+
+.category-a:hover{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-transform:;
+  -moz-transform:;
+  -ms-transform:;
+  -o-transform:;
+  -webkit-animation: 3s ease-in;
 }
 
 .categories-grid {
+  margin: 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 20px;
   grid-template-areas:
+    'categories-h2 categories-h2 '
+    'categories-article categories-article'
     'paintings drawings '
     'graphics installations';
-  justify-items: center;
+  /* justify-items: center; */
+}
+
+.categories-h2 {
+  grid-area: categories-h2;
+}
+
+.categories-article {
+  grid-area: categories-article;
 }
 
 .paintings {
   grid-area: paintings;
+  justify-self: end;
 }
 
 .drawings {
   grid-area: drawings;
+  justify-self: start;
 }
 
 .graphics {
   grid-area: graphics;
+  justify-self: end;
 }
 
 .installations {
   grid-area: installations;
+  justify-self: start;
 }
 
 .category-h4 {
   margin: 0;
-  padding: 0 0 0 10px;
+  padding: 15px;
 }
 
 .single-category {
@@ -202,11 +240,11 @@ li>a:hover {
 }
 
 .img-frame {
-  height: 300px;
+  width: auto;
 }
 
 .category-img {
-  height: 300px;
+  width: 500px;
 }
 
 /* My inspiration section */
@@ -218,7 +256,7 @@ li>a:hover {
     'aboutH2 artistImage'
     'article artistImage '
     'btnReadmore artistImage';
-  margin-top: 30px;
+  margin: 0 0 0 10rem;
 }
 
 .about-h2 {
@@ -257,34 +295,34 @@ li>a:hover {
 /* Contact page */
 
 
-.contact-wrapper{
+.contact-wrapper {
   margin: 0 auto;
   margin-top: 100px;
   width: 80vw;
 }
 
-.contact-wrapper>h1{
+.contact-wrapper>h1 {
   padding-left: 2rem;
 }
 
-.contact-grid{
+.contact-grid {
   background-color: white;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
 }
 
-.contact-form{
+.contact-form {
   margin-left: 2rem;
   margin-top: 2rem;
 }
 
-.contact-form>h2{
+.contact-form>h2 {
   font-weight: 400;
   /* font weight not working */
 }
 
-.form-wraps{
+.form-wraps {
   margin-top: 1.5rem;
 }
 
@@ -308,34 +346,34 @@ input[type=email] {
 
 }
 
-button[type=submit]{
-    text-transform:uppercase;
-    color: black;
-    padding: 7px;
-    margin-top: 1rem;
-    border: 0;
-    background-color: white;
-    font-size: 1.4rem;
-    font-weight: 500;
+button[type=submit] {
+  text-transform: uppercase;
+  color: black;
+  padding: 7px;
+  margin-top: 1rem;
+  border: 0;
+  background-color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
-button[type=submit]:hover{
+button[type=submit]:hover {
   font-weight: 600;
   cursor: pointer;
 }
 
-#button-arrow{
+#button-arrow {
   position: relative;
   top: 5px;
   left: 5px;
 }
 
-textarea{
-    color: black;
-    width: 89%;
-    height: 20vh;
-    padding: 12px 20px;
-    font-size: 1.3rem;
+textarea {
+  color: black;
+  width: 89%;
+  height: 20vh;
+  padding: 12px 20px;
+  font-size: 1.3rem;
 
 
 }

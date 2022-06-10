@@ -14,15 +14,17 @@
     <header>
         <nav>
             <ul class="ul-nav">
-                <li><a href="about.html">About</a></li>
-                <li><a href="art.html">Art</a></li>
+                <li><a class="nav-a" href="about.html">About</a></li>
+                <li><a class="nav-a" href="art.html">Art</a></li>
                 <li>
                     <span class="logo">
-                        <a href="index.html"><img class="imagelogo" src="assets/svg/Logo_version_1.svg" alt=""></a>
+                        <a class="nav-a" href="index.html"><img class="imagelogo" src="assets/svg/Logo_version_1.svg"
+                                alt="">
+                        </a>
                     </span>
                 </li>
-                <li><a href="exhibitions.html">Exhibitions</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="nav-a" href="exhibitions.html">Exhibitions</a></li>
+                <li><a class="nav-a" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -39,10 +41,11 @@
             </article>
         </div>
 
-        <div class="art-categories">
-            <h2>MY WORKS</h2>
-            <article>I use a variety of different medias to express myself</article>
-            <div class="categories-grid">
+        <div class="categories-grid">
+            <h2 class="categories-h2">MY WORKS</h2>
+            <article class="categories-article">I use a variety of different medias to express myself</article>
+
+            <a class="category-a" href="#">
                 <div class="single-category paintings">
                     <div class="img-frame">
                         <img class="category-img" src="assets/images/Screenshot_4.png"
@@ -52,6 +55,8 @@
                         <h4 class="category-h4">Paintings</h4>
                     </div>
                 </div>
+            </a>
+            <a class="category-a" href="#">
                 <div class="single-category drawings">
                     <div class="img-frame">
                         <img class="category-img" src="assets/images/Screenshot_4.png"
@@ -61,6 +66,8 @@
                         <h4 class="category-h4">Drawings</h4>
                     </div>
                 </div>
+            </a>
+            <a class="category-a" href="#">
                 <div class="single-category graphics">
                     <div class="img-frame">
                         <img class="category-img" src="assets/images/Screenshot_4.png"
@@ -70,6 +77,8 @@
                         <h4 class="category-h4">Graphics</h4>
                     </div>
                 </div>
+            </a>
+            <a class="category-a" href="#">
                 <div class="single-category installations">
                     <div class="img-frame">
                         <img class="category-img" src="assets/images/Screenshot_4.png"
@@ -79,7 +88,7 @@
                         <h4 class="category-h4">Installations</h4>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
 
         <div class="about-artist-grid">
@@ -92,7 +101,9 @@
                     canvas in landscapes and still lives.
                 </p>
             </article>
-            <a class="btn-readmore" href="#">Read more button</a>
+            <a class="btn-readmore" href="about.html">
+                <h3>About me</h3>
+            </a>
             <img class="artist-image" src="assets/images/hero-image-zoja.jpg" alt="Photo of Zoja Golubeva">
         </div>
     </main>
