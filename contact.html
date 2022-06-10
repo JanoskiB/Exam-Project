@@ -19,7 +19,7 @@
         <li>
           <span class="logo">
             <a href="index.html"><img class="imagelogo" src="assets/svg/Logo_version_1.svg" alt=""></a>
-        </span>
+          </span>
         </li>
         <li><a href="exhibitions.html">Exhibitions</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -27,28 +27,51 @@
     </nav>
   </header>
   <!-- Comtact form -->
-  <div class="contact-section">
-    <div class="contact-form">
 
-      <h2>Let me know <br> how I can help you!</h2>
-      <form action="https://api.web3forms.com/submit" method="POST">
+  <div class="contact-wrapper">
+    <h1>CONTACT ME</h1>
+    <div class="contact-grid">
 
-        <input type="hidden" name="access_key" value="ed8ac29c-1a4f-4153-82df-f61b2d37e0bc">
+      <div class="contact-section">
+        <div class="contact-form">
 
-        <label for="name">Your name</label> <br>
-        <input type="text" name="name" required> <br>
-        <label for="email">Your e-mail</label> <br>
-        <input type="email" name="email" required> <br>
-        <label for="email">Subject</label> <br>
-        <input type="text" name="subject" /> <br>
-        <label for="message">Your message</label> <br>
-        <textarea name="message" required></textarea> <br>
-        <input type="hidden" name="redirect" value="https://web3forms.com/success">
-        <button type="submit">Send Message</button>
+          <h2>Feel free to reach out to me with inquiries, <br>
+            questions or requests!</h2>
+          <form action="https://api.web3forms.com/submit" method="POST">
 
-      </form>
+            <input type="hidden" name="access_key" value="ed8ac29c-1a4f-4153-82df-f61b2d37e0bc">
+
+            <div class="form-wraps">
+              <label for="name">Name</label> <br>
+              <input type="text" name="name" required> <br>
+            </div>
+
+            <div class="form-wraps">
+              <label for="email">E-mail</label> <br>
+              <input type="email" name="email" required> <br>
+            </div>
+
+            <div class="form-wraps">
+              <label for="email">Subject</label> <br>
+              <input type="text" name="subject" /> <br>
+            </div>
+
+            <div class="form-wraps">
+              <label for="message">Message</label> <br>
+              <textarea name="message" required></textarea> <br>
+              <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            </div>
+            
+            
+            <button type="submit">Send Message <img id="button-arrow" src="assets/images/Icon ionic-ios-arrow-forward.png" alt=""></button>
+
+          </form>
+        </div>
+      </div>
+      <img src="assets/images/contact-img.png" alt="">
     </div>
   </div>
+
 
   <footer>
     <div>

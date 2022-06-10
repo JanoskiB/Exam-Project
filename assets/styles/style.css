@@ -208,6 +208,90 @@ li>a:hover{
 
 /* Contact page */
 
+
+.contact-wrapper{
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 80vw;
+}
+
+.contact-wrapper>h1{
+  padding-left: 2rem;
+}
+
+.contact-grid{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+}
+
+.contact-form{
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-form>h2{
+  font-weight: 400;
+  /* font weight not working */
+}
+
+.form-wraps{
+  margin-top: 1.5rem;
+}
+
+
+input[type=text] {
+  width: 95%;
+  height: 3rem;
+  box-sizing: border-box;
+  color: #000000;
+  padding: 12px 20px;
+  font-size: 1.3rem;
+}
+
+input[type=email] {
+  width: 95%;
+  height: 3rem;
+  box-sizing: border-box;
+  color: #000000;
+  padding: 12px 20px;
+  font-size: 1.3rem;
+
+}
+
+button[type=submit]{
+    text-transform:uppercase;
+    color: black;
+    padding: 7px;
+    margin-top: 1rem;
+    border: 0;
+    background-color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+button[type=submit]:hover{
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#button-arrow{
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+textarea{
+    color: black;
+    width: 89%;
+    height: 20vh;
+    padding: 12px 20px;
+    font-size: 1.3rem;
+
+
+}
+
 /* Single art page */
 
 #myArtName{
