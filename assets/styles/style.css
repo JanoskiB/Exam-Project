@@ -5,7 +5,7 @@
 /* zg- Zoja Golubeva
   arc- article
   btn- button
-
+  img- image
  */
 
 /* For design:
@@ -63,19 +63,35 @@ body{
 
 a{
   font-style: normal;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20pt;
+  text-decoration: none;
+  color: #32341E;
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
+a:active{
+  text-decoration: underline;
+}
+
+h2, h3{
+  text-transform: uppercase;
+}
 
 
 /* test */
 .imagelogo {
-  height: 30px;
+  height: 50px;
   position: relative;
-  top: 15px;
+  top: 25px;
 }
 
 header{
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 
 nav {
@@ -114,6 +130,7 @@ li>a:hover{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 'img-zg hero-article';
+  
 }
 
 .img-zg{
@@ -123,17 +140,16 @@ li>a:hover{
   -moz-border-radius: 0 48% 48% 0;
   -ms-border-radius: 0 48% 48% 0;
   -o-border-radius: 0 48% 48% 0;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   grid-area: img-zg;
 }
 
 .hero-article{
   font-family: 'Quicksand', sans-serif;
   font-weight: normal;
-  grid-area: hero-article;
   padding-top: 20%;
   padding-left: 10%;
-
-  
+  grid-area: hero-article;
 }
 
 .art-zg{
@@ -169,6 +185,14 @@ li>a:hover{
 
 .installations{
   grid-area: installations;
+}
+
+.img-frame{
+  height: 300px;
+}
+
+.category-img{
+  height: 300px;
 }
 
 .about-artist-grid{
