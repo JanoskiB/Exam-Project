@@ -401,3 +401,44 @@ textarea {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+
+/* Footer */
+
+.ft-column{
+}
+
+.ft-column>h4{
+  padding-left: 2.5rem;
+  text-transform: uppercase;
+}
+
+.footer-wrap-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ft-column>span>ul>li{
+  padding-left:0;
+  padding-right: 0;
+}
+
+.ft-column>span>ul>li>a{
+  text-transform: none;
+  font-size: 1rem;
+  margin-left: 1rem;
+  position: relative;
+  bottom: .8rem;
+}
+
+.ft-column{
+  margin: 0 auto;
+}
+
+.footer-logo{
+  padding-top: 50%
+}
+
