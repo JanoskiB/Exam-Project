@@ -5,15 +5,15 @@
 /* zg- Zoja Golubeva
   arc- article
   btn- button
-
+  img- image
  */
 
 /* For design:
 --purple for headings and buttons
 --green for the body text and navigation */
 
-:root{
-  --purple:#453A49; 
+:root {
+  --purple: #453A49;
   --green: #32341E;
   --background: #F8F5F2;
 }
@@ -24,15 +24,15 @@
 
 /* Universal CSS */
 
-html{
-  background: url(../images/wall.jpg) no-repeat center center fixed; 
+html {
+  background: url(../images/wall.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -48,12 +48,12 @@ body{
 
 /* body::before {
   content: ""; */
-  /* height: 100vh;
+/* height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center; */
-  /* position: absolute;
+/* position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -61,21 +61,37 @@ body{
   background-color: rgba(248, 245, 242, 0.6);
 } */
 
-a{
+a {
   font-style: normal;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20pt;
+  text-decoration: none;
+  color: #32341E;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+}
 
 
 /* test */
 .imagelogo {
-  height: 30px;
+  height: 50px;
   position: relative;
-  top: 15px;
+  top: 25px;
 }
 
-header{
-  margin: 0 auto;
+header {
+  margin: 0 auto 30px auto;
 }
 
 nav {
@@ -86,117 +102,149 @@ nav {
   justify-content: center;
 }
 
-.ul-nav{
+.ul-nav {
   list-style: none;
   text-align: center;
 }
 
-li{
+li {
   display: inline-block;
   padding-left: 3rem;
   padding-right: 3rem;
 
 }
 
-li>a{
+li>a {
   text-decoration: none;
   color: var(--green);
 }
 
-li>a:hover{
+li>a:hover {
   text-decoration: underline;
 }
 
 /* Home page */
 
+
+/* Hero section */
 .hero-wrapper-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 'img-zg hero-article';
+
 }
 
-.img-zg{
+.img-zg {
   width: 50vw;
   border-radius: 0 48% 48% 0;
   -webkit-border-radius: 0 48% 48% 0;
   -moz-border-radius: 0 48% 48% 0;
   -ms-border-radius: 0 48% 48% 0;
   -o-border-radius: 0 48% 48% 0;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   grid-area: img-zg;
 }
 
-.hero-article{
+.hero-article {
   font-family: 'Quicksand', sans-serif;
   font-weight: normal;
-  grid-area: hero-article;
   padding-top: 20%;
   padding-left: 10%;
-
-  
+  grid-area: hero-article;
 }
 
-.art-zg{
+.art-zg {
   font-weight: 600;
   font-size: 3rem;
 }
 
-.art-categories{
-  margin-top: 5rem;
-  margin-left: 5rem;
+/* Art categories */
+.art-categories {
+  margin: 5rem;
 }
 
-.categories-grid{
+.categories-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: 
-  'paintings drawings '
-  'graphics installations';
+  gap: 10px;
+  grid-template-areas:
+    'paintings drawings '
+    'graphics installations';
+  justify-items: center;
 }
 
-.paintings{
+.paintings {
   grid-area: paintings;
 }
 
-.drawings{
+.drawings {
   grid-area: drawings;
 }
 
-.graphics{
+.graphics {
   grid-area: graphics;
 }
 
-.installations{
+.installations {
   grid-area: installations;
 }
 
-.about-artist-grid{
+.category-h4 {
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+.single-category {
+  background-color: #F8F5F2;
+  width: fit-content;
+}
+
+.img-frame {
+  height: 300px;
+}
+
+.category-img {
+  height: 300px;
+}
+
+/* My inspiration section */
+.about-artist-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: 
-  'aboutH2 aboutH2'
-  'article artistImage '
-  'btnReadmore artistImage';
+  grid-template-areas:
+    'aboutH2 artistImage'
+    'article artistImage '
+    'btnReadmore artistImage';
+  margin-top: 30px;
 }
 
-.about-h2{
+.about-h2 {
   grid-area: aboutH2;
 }
 
-.about-article{
+.about-article {
   grid-area: article;
 
 }
 
 .artist-image {
   grid-area: artistImage;
+  width: 50vw;
+  border-radius: 48% 0 0 48%;
+  -webkit-border-radius: 48% 0 0 48%;
+  -moz-border-radius: 48% 0 0 48%;
+  -ms-border-radius: 48% 0 0 48%;
+  -o-border-radius: 48% 0 0 48%;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.btn-readmore{
+.btn-readmore {
   grid-area: btnReadmore;
 }
+
 /* About page */
 
 
@@ -294,11 +342,11 @@ textarea{
 
 /* Single art page */
 
-#myArtName{
+#myArtName {
   padding-left: 3rem;
 }
 
-.single-art-div{
+.single-art-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -307,12 +355,11 @@ textarea{
 
 }
 
-#single-art-img>img{
+#single-art-img>img {
   width: 90%;
 }
 
-#single-art-info{
+#single-art-info {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
