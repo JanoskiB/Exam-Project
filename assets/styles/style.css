@@ -133,12 +133,12 @@ li>a:hover {
   text-decoration: underline;
 }
 
-.div-dropdown{
+.div-dropdown {
   position: relative;
   display: inline-block;
 }
 
-.nav-dropdown{
+.nav-dropdown {
   display: none;
   position: absolute;
   background-color: #F8F5F2;
@@ -148,7 +148,7 @@ li>a:hover {
   margin-top: 5px;
 }
 
-.nav-dropdown>a{
+.nav-dropdown>a {
   display: block;
   text-align: left;
   text-decoration: none;
@@ -157,11 +157,11 @@ li>a:hover {
   padding: 10px;
 }
 
-.nav-dropdown>a:hover{
+.nav-dropdown>a:hover {
   text-decoration: underline;
 }
 
-.div-dropdown:hover .nav-dropdown{
+.div-dropdown:hover .nav-dropdown {
   display: block;
 }
 
@@ -347,7 +347,7 @@ li>a:hover {
 .contact-wrapper {
   margin: 0 auto;
   margin-top: 100px;
-  width: 80vw;
+  width: 60vw;
 }
 
 .contact-wrapper>h1 {
@@ -355,15 +355,28 @@ li>a:hover {
 }
 
 .contact-grid {
-  background-color: white;
+  background-color: var(--background);
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
 }
 
+.contact-grid>img {
+  width: 27vw;
+}
+
 .contact-form {
   margin-left: 2rem;
   margin-top: 2rem;
+}
+
+.contact-form>p {
+  font-size: 1.3rem;
+  padding-right: 5px;
+}
+
+.contact-form {
+  font-size: 1.2rem;
 }
 
 .contact-form>h2 {
@@ -397,13 +410,12 @@ input[type=email] {
 
 button[type=submit] {
   text-transform: uppercase;
-  color: black;
-  padding: 7px;
+  color: var(--purple);
   margin-top: 1rem;
   border: 0;
-  background-color: white;
+  background-color: transparent;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 button[type=submit]:hover {
@@ -423,8 +435,6 @@ textarea {
   height: 20vh;
   padding: 12px 20px;
   font-size: 1.3rem;
-
-
 }
 
 /* Single art page */
@@ -455,7 +465,7 @@ textarea {
 /* Footer */
 
 footer {
-  margin-top: 30vh;
+  margin-top: 20vh;
 }
 
 
@@ -480,8 +490,6 @@ footer {
 .ft-column>span>ul>li {
   padding-left: 0;
   padding-right: 0;
-
-
 }
 
 .ft-column>span>ul>li>a {
