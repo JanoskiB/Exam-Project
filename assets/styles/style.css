@@ -78,7 +78,7 @@ body {
   text-decoration: underline;
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
   font-family: 'Oxygen', sans-serif;
   text-transform: uppercase;
 }
@@ -181,11 +181,6 @@ li>a:hover {
 .category-a:hover{
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
-  -webkit-animation: 3s ease-in;
 }
 
 .categories-grid {
