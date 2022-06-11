@@ -25,7 +25,7 @@
 /* Universal CSS */
 
 html {
-  background: url(../images/wall.jpg) no-repeat center center fixed;
+  background: url(../images/wall.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -118,8 +118,9 @@ nav {
 
 li {
   display: inline-block;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  padding-top: 3vh;
 
 }
 
@@ -405,12 +406,15 @@ textarea {
 
 /* Footer */
 
-.ft-column{
+footer{
+  margin-top: 30vh;
 }
+
 
 .ft-column>h4{
   padding-left: 2.5rem;
   text-transform: uppercase;
+  margin-bottom: -10px;
 }
 
 .footer-wrap-grid{
@@ -421,9 +425,15 @@ textarea {
   margin: 0 auto;
 }
 
+/* .ft-column>span>ul{
+  margin-top: 0px;
+} */
+
 .ft-column>span>ul>li{
   padding-left:0;
   padding-right: 0;
+
+  
 }
 
 .ft-column>span>ul>li>a{
@@ -431,7 +441,8 @@ textarea {
   font-size: 1rem;
   margin-left: 1rem;
   position: relative;
-  bottom: .8rem;
+  bottom: .5rem;
+  
 }
 
 .ft-column{
@@ -442,3 +453,6 @@ textarea {
   padding-top: 50%
 }
 
+.ft-right{
+  text-align: right;
+}
