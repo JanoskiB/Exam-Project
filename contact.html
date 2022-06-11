@@ -14,8 +14,18 @@
   <header>
     <nav>
       <ul class="ul-nav">
-        <li><a class="nav-a" href="about.html">About</a></li>
-        <li><a class="nav-a" href="art.html">Art</a></li>
+        <li class=""><a class="nav-a" href="about.html">About</a></li>
+        <li>
+          <div class="div-dropdown">
+            <a class="nav-a nav-art" href="art.html">Art</a>
+            <div class="nav-dropdown">
+              <a href="#">Paintings</a>
+              <a href="#">Drawings</a>
+              <a href="#">Graphics</a>
+              <a href="#">Installations</a>
+            </div>
+          </div>
+        </li>
         <li>
           <span class="logo">
             <a class="nav-a" href="index.html"><img class="imagelogo" src="assets/svg/Logo_version_1.svg" alt="">
@@ -27,7 +37,6 @@
       </ul>
     </nav>
   </header>
-
   <!-- Contact form -->
 
   <div class="contact-wrapper">
@@ -65,7 +74,7 @@
             </div>
 
 
-            <button type="submit">Send Message <img id="button-arrow"
+            <button type="submit" class="btn-readmore">Send Message <img id="button-arrow"
                 src="assets/images/Icon ionic-ios-arrow-forward.png" alt=""></button>
 
           </form>

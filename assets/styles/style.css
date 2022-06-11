@@ -83,11 +83,11 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
-h2{
+h2 {
   font-size: 2rem;
 }
 
-h3{
+h3 {
   font-size: 1.3rem;
 }
 
@@ -133,6 +133,45 @@ li>a:hover {
   text-decoration: underline;
 }
 
+.div-dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown{
+  display: none;
+  position: absolute;
+  background-color: #F8F5F2;
+  width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  margin-top: 5px;
+}
+
+.nav-dropdown>a{
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #32341E;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.nav-dropdown>a:hover{
+  text-decoration: underline;
+}
+
+.div-dropdown:hover .nav-dropdown{
+  display: block;
+}
+
+.copyright-div {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
 /* Home page */
 
 
@@ -169,22 +208,32 @@ li>a:hover {
   font-size: 3rem;
 }
 
+.btn-more {
+  text-decoration: none;
+  color: #453A49;
+}
+
+.btn-more:hover {
+  text-decoration: underline;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
 /* Art categories */
 
-.category-a{
+.category-a {
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
   color: #32341E;
 }
 
-.category-a:hover{
+.category-a:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .categories-grid {
-  margin: 10rem;
+  margin: 5rem 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -243,6 +292,10 @@ li>a:hover {
   width: 500px;
 }
 
+/* .category-img:hover {
+  background: rgba(0, 0, 0, 0.5);
+} */
+
 /* My inspiration section */
 .about-artist-grid {
   display: grid;
@@ -251,7 +304,7 @@ li>a:hover {
   grid-template-areas:
     'aboutH2 artistImage'
     'article artistImage '
-    'btnReadmore artistImage';
+    'btnAbout artistImage';
   margin: 0 0 0 10rem;
 }
 
@@ -275,8 +328,8 @@ li>a:hover {
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.btn-readmore {
-  grid-area: btnReadmore;
+.btn-about {
+  grid-area: btnAbout;
 }
 
 /* About page */
@@ -401,18 +454,18 @@ textarea {
 
 /* Footer */
 
-footer{
+footer {
   margin-top: 30vh;
 }
 
 
-.ft-column>h4{
+.ft-column>h4 {
   padding-left: 2.5rem;
   text-transform: uppercase;
   margin-bottom: -10px;
 }
 
-.footer-wrap-grid{
+.footer-wrap-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -424,30 +477,30 @@ footer{
   margin-top: 0px;
 } */
 
-.ft-column>span>ul>li{
-  padding-left:0;
+.ft-column>span>ul>li {
+  padding-left: 0;
   padding-right: 0;
 
-  
+
 }
 
-.ft-column>span>ul>li>a{
+.ft-column>span>ul>li>a {
   text-transform: none;
   font-size: 1rem;
   margin-left: 1rem;
   position: relative;
   bottom: .5rem;
-  
+
 }
 
-.ft-column{
+.ft-column {
   margin: 0 auto;
 }
 
-.footer-logo{
+.footer-logo {
   padding-top: 50%
 }
 
-.ft-right{
+.ft-right {
   text-align: right;
 }

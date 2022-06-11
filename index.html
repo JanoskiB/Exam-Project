@@ -14,8 +14,18 @@
     <header>
         <nav>
             <ul class="ul-nav">
-                <li><a class="nav-a" href="about.html">About</a></li>
-                <li><a class="nav-a" href="art.html">Art</a></li>
+                <li class=""><a class="nav-a" href="about.html">About</a></li>
+                <li>
+                    <div class="div-dropdown">
+                        <a class="nav-a nav-art" href="art.html">Art</a>
+                        <div class="nav-dropdown">
+                            <a href="#">Paintings</a>
+                            <a href="#">Drawings</a>
+                            <a href="#">Graphics</a>
+                            <a href="#">Installations</a>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <span class="logo">
                         <a class="nav-a" href="index.html"><img class="imagelogo" src="assets/svg/Logo_version_1.svg"
@@ -95,14 +105,14 @@
             <h2 class="about-h2">My inspiration</h2>
             <article class="about-article">
                 <p>‘Many characters and stories have lived in my head for many years and are now gradually appearing on
-                    the canvas one after another.’
+                    the canvas one after another.’<br>
                     <br>
                     I admire the beauty of both nature and the most ordinary things, and I try to display my emotions on
                     canvas in landscapes and still lives.
                 </p>
             </article>
-            <a class="btn-readmore" href="about.html">
-                <h3>About me</h3>
+            <a class="btn-more btn-about" href="about.html">
+                <h3>About me<img id="button-arrow" src="assets/images/Icon ionic-ios-arrow-forward.png" alt=""></h3>
             </a>
             <img class="artist-image" src="assets/images/hero-image-zoja.jpg" alt="Photo of Zoja Golubeva">
         </div>
@@ -153,6 +163,9 @@
                 </span>
 
             </address>
+        </div>
+        <div class="copyright-div">
+            <small>&copy; Copyright 2022 | All right reserved</small>
         </div>
     </footer>
 
