@@ -341,6 +341,33 @@ li>a:hover {
 
 /* About page */
 
+.about-grid-all{
+  margin-top: 15vh ;
+
+}
+
+.art-studies-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'artistImage aboutH2'
+    'artistImage article'
+    'artistImage btnAbout';
+
+}
+
+
+.art-studies-image {
+  grid-area: artistImage;
+  width: 50vw;
+  border-radius: 0 48% 48% 0;
+  -webkit-border-radius: 0 48% 48% 0;
+  -moz-border-radius: 0 48% 48% 0;
+  -ms-border-radius: 0 48% 48% 0;
+  -o-border-radius: 0 48% 48% 0;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
 
 /* Art page */
 
