@@ -210,7 +210,7 @@ li>a:hover {
 
 .btn-more {
   text-decoration: none;
-  color: #453A49;
+  color: var(--purple);
 }
 
 .btn-more:hover {
@@ -224,12 +224,13 @@ li>a:hover {
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
-  color: #32341E;
+  color: var(--purple);
 }
 
 .category-a:hover {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); */
+  text-decoration: underline;
 }
 
 .categories-grid {
@@ -248,6 +249,7 @@ li>a:hover {
 
 .categories-h2 {
   grid-area: categories-h2;
+  margin-bottom: 0;
 }
 
 .categories-article {
@@ -282,6 +284,11 @@ li>a:hover {
 .single-category {
   background-color: #F8F5F2;
   width: fit-content;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.single-category:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .img-frame {
