@@ -369,6 +369,19 @@ li>a:hover {
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
+.about-article>p{
+  padding-right: 5vw;
+}
+
+.art-studies-grid>h2{
+  padding-left: 5vw;
+  padding-top: 10vh;
+}
+
+.art-studies-article>p{
+  padding-left: 5vw;
+  padding-right: 15vw;
+}
 /* Art page */
 
 
