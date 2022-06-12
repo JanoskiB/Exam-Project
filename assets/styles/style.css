@@ -233,11 +233,11 @@ li>a:hover {
 }
 
 .categories-grid {
-  margin: 5rem 10rem;
+  margin: 5vw 15vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  gap: 20px;
+  gap: 1vw;
   grid-template-areas:
     'categories-h2 categories-h2 '
     'categories-article categories-article'
@@ -289,7 +289,7 @@ li>a:hover {
 }
 
 .category-img {
-  width: 500px;
+  width: 35vw;
 }
 
 /* .category-img:hover {
@@ -305,7 +305,7 @@ li>a:hover {
     'aboutH2 artistImage'
     'article artistImage '
     'btnAbout artistImage';
-  margin: 0 0 0 10rem;
+  margin: 0 0 0 15vw;
 }
 
 .about-h2 {
