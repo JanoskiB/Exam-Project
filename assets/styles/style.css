@@ -165,6 +165,18 @@ li>a:hover {
   display: block;
 }
 
+/* A grid for all the categories templates. 
+When doing a specific grid, add a ...-grid class */
+.categories-grid {
+  margin: 5vw 15vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1vw;
+}
+
+
+
 .copyright-div {
   display: flex;
   justify-content: center;
@@ -233,18 +245,12 @@ li>a:hover {
   text-decoration: underline;
 }
 
-.categories-grid {
-  margin: 5vw 15vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 1vw;
+.art-grid {
   grid-template-areas:
     'categories-h2 categories-h2 '
     'categories-article categories-article'
     'paintings drawings '
     'graphics installations';
-  /* justify-items: center; */
 }
 
 .categories-h2 {
@@ -383,7 +389,116 @@ li>a:hover {
   padding-right: 15vw;
 }
 /* Art page */
+/* Paintings */
+.paintings-grid {
+  grid-template-areas:
+    'category-name-h2 category-name-h2'
+    'portrait p-still-life'
+    'landscape figurative'
+    'more-paintings more-paintings';
+}
 
+.category-name-h2 {
+  grid-area: category-name-h2;
+}
+
+.portrait {
+  grid-area: portrait;
+}
+
+.paintings-still-life {
+  grid-area: p-still-life;
+}
+
+.landscape {
+  grid-area: landscape;
+}
+
+.figurative {
+  grid-area: figurative;
+}
+
+.btn-more-paintings {
+  grid-area: more-paintings;
+}
+
+/* Drawings */
+.drawings-grid {
+  grid-template-areas:
+    'category-drawings-h2 category-drawings-h2'
+    'd-portrait d-still-life'
+    'd-nude .'
+    'more-drawings more-drawings';
+}
+
+.category-drawings-h2 {
+  grid-area: category-drawings-h2;
+}
+
+.drawings-portrait {
+  grid-area: d-portrait;
+}
+
+.drawings-still-life {
+  grid-area: d-still-life;
+}
+
+.drawings-nude {
+  grid-area: d-nude;
+}
+
+.btn-more-drawings {
+  grid-area: more-drawings;
+}
+
+/* Graphics */
+.graphics-grid {
+  grid-template-areas:
+    'category-graphics-h2 category-graphics-h2'
+    'linocut .'
+    'more-graphics more-graphics';
+}
+
+.category-graphics-h2 {
+  grid-area: category-graphics-h2;
+}
+
+.linocut {
+  grid-area: linocut;
+}
+
+.btn-more-graphics {
+  grid-area: more-graphics;
+}
+
+/* Installations */
+.installations-grid {
+  grid-template-areas:
+    'category-installations-h2 category-installations-h2'
+    'textile paper'
+    'fungi .'
+    'more-installations more-installations';
+}
+
+.category-installations-h2 {
+  grid-area: category-installations-h2;
+}
+
+.textile {
+  grid-area: textile;
+}
+
+.paper {
+  grid-area: paper;
+}
+
+.fungi {
+  grid-area: fungi;
+}
+
+.btn-more-installations {
+  grid-area: more-installations;
+}
 
 /* Exhibitions page */
 
@@ -470,7 +585,7 @@ button[type=submit]:hover {
   cursor: pointer;
 }
 
-#button-arrow {
+.button-arrow {
   position: relative;
   top: 5px;
   left: 5px;
@@ -530,15 +645,15 @@ footer {
   margin: 0 auto;
 }
 
-.ft-left{
+.ft-left {
   padding-right: 7.5vw;
 }
 
-.ft-mid{
+.ft-mid {
   padding-right: 1vw;
 }
 
-.ft-mid>a>img{
+.ft-mid>a>img {
   padding-bottom: 20px;
 }
 
@@ -568,7 +683,7 @@ footer {
   text-align: right;
 }
 
-.ft-span-bottom>ul>li{
-position: relative;
-bottom: 20px;
+.ft-span-bottom>ul>li {
+  position: relative;
+  bottom: 20px;
 }
