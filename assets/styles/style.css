@@ -483,9 +483,13 @@ footer {
   margin: 0 auto;
 }
 
-/* .ft-column>span>ul{
-  margin-top: 0px;
-} */
+.ft-left{
+  padding-right: 7.5vw;
+}
+
+.ft-mid{
+  padding-right: 1vw;
+}
 
 .ft-column>span>ul>li {
   padding-left: 0;
