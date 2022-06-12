@@ -490,9 +490,17 @@ footer {
   margin: 0 auto;
 }
 
-/* .ft-column>span>ul{
-  margin-top: 0px;
-} */
+.ft-left{
+  padding-right: 7.5vw;
+}
+
+.ft-mid{
+  padding-right: 1vw;
+}
+
+.ft-mid>a>img{
+  padding-bottom: 20px;
+}
 
 .ft-column>span>ul>li {
   padding-left: 0;
@@ -518,4 +526,9 @@ footer {
 
 .ft-right {
   text-align: right;
+}
+
+.ft-span-bottom>ul>li{
+position: relative;
+bottom: 20px;
 }
