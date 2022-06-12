@@ -83,6 +83,10 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
+h1{
+  font-weight: 300;
+}
+
 h2 {
   font-size: 2rem;
 }
@@ -118,7 +122,7 @@ nav {
 
 li {
   display: inline-block;
-  padding-left: 8vh;
+  padding-left: 10vh;
   padding-right: 8vh;
   padding-top: 3vh;
 
@@ -215,8 +219,8 @@ When doing a specific grid, add a ...-grid class */
   grid-area: hero-article;
 }
 
-.art-zg {
-  font-weight: 600;
+h1 {
+  font-weight: 400;
   font-size: 3rem;
 }
 
@@ -388,6 +392,16 @@ When doing a specific grid, add a ...-grid class */
   padding-left: 5vw;
   padding-right: 15vw;
 }
+
+.resume-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  height: 60vh;
+  background-color: white;
+  margin: 0 auto;
+}
+
 /* Art page */
 /* Paintings */
 .paintings-grid {
@@ -509,15 +523,11 @@ When doing a specific grid, add a ...-grid class */
 .contact-wrapper {
   margin: 0 auto;
   margin-top: 100px;
-  width: 66vw;
-}
-
-.contact-wrapper>h1 {
-  padding-left: 2rem;
+  width: 70vw;
 }
 
 .contact-grid {
-  background-color: var(--background);
+  background-color: white;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
@@ -550,6 +560,10 @@ When doing a specific grid, add a ...-grid class */
   margin-top: 1.5rem;
 }
 
+label{
+  position: relative;
+  bottom: 6px;
+}
 
 input[type=text] {
   width: 95%;
@@ -568,6 +582,11 @@ input[type=email] {
   padding: 12px 20px;
   font-size: 1.3rem;
 
+}
+
+input::placeholder{
+  font-size: 1.1rem;
+  color:#453a496c;
 }
 
 button[type=submit] {
