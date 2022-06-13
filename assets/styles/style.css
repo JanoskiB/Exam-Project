@@ -364,9 +364,7 @@ h1 {
     'artistImage aboutH2'
     'artistImage article'
     'artistImage btnAbout';
-
 }
-
 
 .art-studies-image {
   grid-area: artistImage;
@@ -393,13 +391,44 @@ h1 {
   padding-right: 15vw;
 }
 
-.resume-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 80vw;
+.my-inspiration{
+  margin-bottom: 15vh;
+}
+
+.my-inspiration>h2{
+  margin-top: 15vh;
+}
+
+.resume-wrap{
+  width: 75vw;
   height: 60vh;
   background-color: white;
   margin: 0 auto;
+}
+
+.resume-wrap>h2{
+  padding-left: 3vw;
+  padding-top: 3vh;
+}
+
+.resume-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.resume-grid>div>p{
+  padding-left: 3vw;
+}
+
+.resume-grid>div>p>img{
+  position: relative;
+  top: 15px;
+}
+
+.resume-wrap>a>h3{
+  padding-left: 3vw;
+  width: fit-content;
 }
 
 /* Art page */
