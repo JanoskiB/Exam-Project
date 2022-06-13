@@ -1,0 +1,21 @@
+.painting {
+    width: 250px;
+}
+
+.painting:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+}
+
+#list-canvas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; */
+    margin-top: 60px;
+}

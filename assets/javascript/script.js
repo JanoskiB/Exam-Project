@@ -1,58 +1,31 @@
+import { getToken } from "./api.js";
 
-// Fetching from headless WordPress
+const getUrlParams = () => {
+    const params = new URLSearchParams(window.location.search);
+    return Object.fromEntries(params.entries());
+}
 
-// "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LmRnb2x1YmV2YS5jb20iLCJpYXQiOjE2NTQ2ODQ3OTUsIm5iZiI6MTY1NDY4NDc5NSwiZXhwIjoxNjU1Mjg5NTk1LCJkYXRhIjp7InVzZXIiOnsiaWQiOjMsImRldmljZSI6IiIsInBhc3MiOiI1NTkzYzY1ODQ5YjY5ZDM0MTNiNGExYWRhOTA5YzVlNCJ9fX0.6z5exLsg83bFXvpHVVw42ji68ZiW_oKZ-rM9XWJAvyM"
+const token = await getToken();
 
-let token;
-fetch('https://www.dgolubeva.com/wp-json/jwt-auth/v1/token', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-        "username": "Balazs",
-        "password": "Password123!"
-    })
-})
-    .then(response => response.json())
-    .then(tokenData => {
-        console.log(tokenData);
-        token = tokenData.data.token;
-    })
-    .then(() => {
-        fetch('https://www.dgolubeva.com/wp-json/wp/v2/posts?status=private&per_page=100', {
-            method: 'GET',
-            headers: {
-                Authorization: `Bearer ${token}`
-            }
-        })
-            .then(response => response.json())
-            .then(data2 => {
-                console.log(data2);
-                myArtName = document.querySelector('#myArtName');
-                myArtName.innerHTML = `${data2[5].acf.name}`;
+const getSingleArt = async (id, token) => await fetch(`https://www.dgolubeva.com/wp-json/wp/v2/posts/${id}?status=private`, {
+                method: 'GET',
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            }).then(res => res.json());
 
-                myImage = document.querySelector(`#single-art-img`);
-                myImage.innerHTML = `<img src="${data2[5].acf.picture.url}">`;
+const {id} = getUrlParams();
 
-            });
-    })
-    .then(() => {
-      fetch('https://www.dgolubeva.com/wp-json/wp/v2/posts?status=private&per_page=100&offset=100', {
-          method: 'GET',
-          headers: {
-              Authorization: `Bearer ${token}`
-          }
-      })
-          .then(response => response.json())
-          .then(data3 => {
-              console.log(data3);
-            //   myArtName = document.querySelector('#myArtName');
-            //   myArtName.innerHTML = `${data3[5].acf.name}`;
+console.log(id)
 
-              // myImage = document.querySelector(`#recipe-img`);
-              // myImage.innerHTML = `<img src="${data2[8].acf.image_url}">`;
+const art = await getSingleArt(id, token);
+console.log(art);
 
-          });
-  })
+const myArtName = document.querySelector('#myArtName');
+myArtName.innerHTML = `${art.acf.name}`;
+
+const myImage = document.querySelector(`#single-art-img`);
+myImage.innerHTML = `<img src="${art.acf.picture.url}">`;
+
+
 
