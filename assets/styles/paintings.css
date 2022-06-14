@@ -1,6 +1,15 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .painting {
     width: 40vw;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .painting:hover {
@@ -13,17 +22,18 @@
 }
 
 #list-canvas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 15px;
-    justify-content: center; */
+    justify-content: center;
     margin-top: 60px;
 }
 
 #breadcrumbs{
     display: flex;
-    margin-left: 40px;
+    margin-left: 14rem;
+    margin-top: 3rem;
 }
 
 #breadcrumbs>div{
@@ -35,6 +45,17 @@
     bottom:5px;
 }
 
-#breadcrumbs>a{
-    
+#breadcrumbs>div>a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #32341E;
+}
+
+#toTop{
+    position: absolute;
+    right: 0;
+    top:300px;
+    width: 80px;
+    position: fixed;
+    cursor: pointer;
 }

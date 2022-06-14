@@ -34,3 +34,4 @@ firstTen.forEach(x => {
     canvas.appendChild(anchor);
 
 })
+
