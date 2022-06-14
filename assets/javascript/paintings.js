@@ -22,16 +22,22 @@ const getAllData = async ({page, url}, token) => {
 };
 const data = await getAllData({page: 100, url: `https://www.dgolubeva.com/wp-json/wp/v2/posts?status=private`}, token);
 
+console.log(getAllData);
+
 const firstTen = data;
 firstTen.forEach(x => {
     const anchor = document.createElement(`a`);
     const element = document.createElement(`img`);
+    const div = document.createElement(`div`);
     element.classList.add(`painting`);
+    div.classList.add(`image-div`);
 
     element.src = x.acf.picture.url;
     anchor.href = `single-art-page.html?id=${x.id}`
     anchor.appendChild(element);
-    canvas.appendChild(anchor);
+    div.appendChild(anchor);
+    canvas.appendChild(div);
+
 
 })
 
