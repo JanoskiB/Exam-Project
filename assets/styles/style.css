@@ -349,6 +349,34 @@ h1 {
   grid-area: btnAbout;
 }
 
+.exhibitions-wrap{
+  width: 70vw;
+  margin:0 auto;
+}
+
+.exhibitions-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.8rem;
+}
+
+.grid-card>img{
+  width: 23vw;
+}
+
+.grid-card{
+  background-color: white;
+  width: 23vw;
+}
+
+.grid-card>p{
+  padding-left: 15px;
+}
+
+.grid-card>a>h3{
+  padding-left: 15px;
+}
+
 /* About page */
 
 .about-grid-all{
@@ -401,7 +429,7 @@ h1 {
 
 .resume-wrap{
   width: 75vw;
-  height: 60vh;
+  height: 65vh;
   background-color: white;
   margin: 0 auto;
 }
@@ -432,6 +460,7 @@ h1 {
 }
 
 /* Art page */
+
 /* Paintings */
 .paintings-grid {
   grid-template-areas:

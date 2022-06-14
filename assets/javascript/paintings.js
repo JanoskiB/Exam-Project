@@ -30,7 +30,6 @@ firstTen.forEach(x => {
     const element = document.createElement(`img`);
     const div = document.createElement(`div`);
     element.classList.add(`painting`);
-    div.classList.add(`image-div`);
 
     element.src = x.acf.picture.url;
     anchor.href = `single-art-page.html?id=${x.id}`

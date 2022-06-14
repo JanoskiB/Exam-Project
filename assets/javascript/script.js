@@ -27,5 +27,10 @@ myArtName.innerHTML = `${art.acf.name}`;
 const myImage = document.querySelector(`#single-art-img`);
 myImage.innerHTML = `<img src="${art.acf.picture.url}">`;
 
+// const myArtYear = document.querySelector(`#myArtYear`);
+// myArtYear.innerHTML = `${art.acf.year}`
+
+const myArtSize = document.querySelector(`#myArtSize`);
+myArtSize.innerHTML = `${art.acf.size} cm`
 
 
