@@ -1,5 +1,6 @@
 .painting {
-    width: 250px;
+    width: 40vw;
+    margin: 0 auto;
 }
 
 .painting:hover {
@@ -18,4 +19,22 @@
     gap: 15px;
     justify-content: center; */
     margin-top: 60px;
+}
+
+#breadcrumbs{
+    display: flex;
+    margin-left: 40px;
+}
+
+#breadcrumbs>div{
+    margin-left:20px ;
+}
+
+#home-icon{
+    position: relative;
+    bottom:5px;
+}
+
+#breadcrumbs>a{
+    
 }

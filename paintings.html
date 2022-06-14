@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,47 @@
     <title>Document</title>
     <script src="assets/javascript/paintings.js" type="module"></script>
     <link rel="stylesheet" href="assets/styles/paintings.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
+
 <body>
-    <div id="list-canvas"></div>
+    <header>
+        <nav>
+            <ul class="ul-nav">
+                <li>
+                    <div class="div-dropdown">
+                        <a class="nav-a nav-art" href="art.html">Art</a>
+                        <div class="nav-dropdown">
+                            <a href="#">Paintings</a>
+                            <a href="#">Drawings</a>
+                            <a href="#">Graphics</a>
+                            <a href="#">Installations</a>
+                        </div>
+                    </div>
+                </li>
+                <li class=""><a class="nav-a" href="about.html">About</a></li>
+                <li>
+                    <span class="logo">
+                        <a class="nav-a" href="index.html"><img class="imagelogo" src="assets/svg/Logo_version_1.svg"
+                                alt="">
+                        </a>
+                    </span>
+                </li>
+                <li><a class="nav-a" href="exhibitions.html">Exhibitions</a></li>
+                <li><a class="nav-a" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="breadcrumbs">
+            <div><a href="index.html"><img id="home-icon" src="assets/icons/Icon ionic-md-home.png" alt=""></a></div>
+            <div><img src="assets/icons/Icon ionic-ios-arrow-forward.png" alt=""></div>
+            <div><a href="art.html">ART</a></div>
+            <div><img src="assets/icons/Icon ionic-ios-arrow-forward.png" alt=""></div>
+            <div><a href="paintings.html">Paintings</a></div>
+        </div>
+        <div id="list-canvas"></div>
+    </main>
 </body>
+
 </html>
