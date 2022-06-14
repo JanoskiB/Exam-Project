@@ -4,11 +4,17 @@ html{
     box-sizing: border-box;
 }
 
-.painting {
-    width: 40vw;
-    margin: 0 auto;
+.image-div{
+    width: 30vw;
     display: flex;
-    flex-direction: column;
+    
+}
+
+.painting {
+    width: 100%;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: row; */
 
 }
 
@@ -23,11 +29,15 @@ html{
 
 #list-canvas {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    /* flex-direction: row; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; */
+    
     gap: 15px;
     justify-content: center;
-    margin-top: 60px;
+    margin: 60px 15vw 0 15vw;
 }
 
 #breadcrumbs{
