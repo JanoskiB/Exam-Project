@@ -45,22 +45,6 @@ body {
 }
 
 
-
-/* body::before {
-  content: ""; */
-/* height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
-/* position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(248, 245, 242, 0.6);
-} */
-
 .nav-a {
   font-style: normal;
   text-transform: uppercase;
@@ -120,6 +104,13 @@ nav {
   text-align: center;
 }
 
+@media screen and (max-width: 500px) {
+  header {
+    display: none;
+  }
+
+}
+  
 li {
   display: inline-block;
   padding-left: 10vh;
@@ -209,6 +200,35 @@ When doing a specific grid, add a ...-grid class */
   -o-border-radius: 0 48% 48% 0;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   grid-area: img-zg;
+}
+
+@media screen and (max-width:500px) {
+  .hero-wrapper-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'img-zg' 
+    'hero-article';
+   }
+  
+  .img-zg {
+    width: 100vw;
+    border-radius: 0 0 0 0;
+    width: 130%;
+    transform: rotate(3deg);
+    -webkit-transform: ;
+    -moz-transform: ;
+    -ms-transform: ;
+    -o-transform: ;
+}
+  .mobile-nav {
+  width: 40px;
+  height: 40px;
+  background-color: aqua;
+  position:relative;
+  
+}
 }
 
 .hero-article {
