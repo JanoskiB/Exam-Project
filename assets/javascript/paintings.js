@@ -20,7 +20,7 @@ const getAllData = async ({page, url}, token) => {
     }
      return allData;
 };
-const data = await getAllData({page: 100, url: `https://www.dgolubeva.com/wp-json/wp/v2/categories/id=10?status=private`}, token);
+const data = await getAllData({page: 100, url: `https://www.dgolubeva.com/wp-json/wp/v2/posts?status=private`}, token);
 
 console.log(getAllData);
 
