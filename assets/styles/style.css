@@ -465,8 +465,9 @@ h1 {
   padding-left: 3vw;
 }
 
-.resume-grid>div>p>img {
+.resume-grid>div>p>span {
   position: relative;
+  top: 15px;
 }
 
 .resume-wrap>a>h3 {
@@ -853,8 +854,10 @@ footer {
  padding-right: 10px;
   }
 
-  .resume-grid>div>p>img{
-    width: 10px;
+  .resume-grid>div>p>span{
+    width: 20px;
+    position: relative;
+    top:5px;
      }
 
   .about-article>p {
