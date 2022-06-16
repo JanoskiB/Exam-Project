@@ -721,7 +721,7 @@ textarea {
   padding-right: 2rem;
 }
 
-#myArtSize, #myArtMedium {
+#myArtSize, #myArtMedium, #myArtYear {
   text-transform: lowercase;
   font-size: 1.2rem;
 }

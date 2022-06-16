@@ -1,31 +1,40 @@
+//importing a token to get access to the private wordpress posts
 import { getToken } from "./api.js";
 
+//targeting a div in the HTML
 const canvas = document.getElementById(`list-canvas`);
 
+//get the token ready
 const token = await getToken();
 
+// fething all the data from the WordPress posts
 const getAllData = async ({page, url}, token) => {
+    // setting the counter to make sure that all the available data is fethed, since Wordpress has a limit of 100 posts at a time
     let currentCount = 0;
     const allData = [];
     while(true) {
         const arr = await fetch(`${url}&per_page=${page}&offset=${currentCount++ * page}`, {
             method: 'GET',
             headers: {
+                //authenticate the wordpress token
                 Authorization: `Bearer ${token}`
             }
         })
             .then(response => response.json());
         allData.push(...arr);
+        // brealing the loop when all the posts are fetched
         if(arr.length !== page) break;
     }
      return allData;
 };
+//starting the counter again untill the are no more posts left to fetch
 const data = await getAllData({page: 100, url: `https://www.dgolubeva.com/wp-json/wp/v2/posts?status=private`}, token);
 
 console.log(getAllData);
 
-const firstTen = data;
-firstTen.forEach(x => {
+//targeting the elements in HTML to display the fetched data
+const allPieces = data;
+allPieces.forEach(x => {
     const anchor = document.createElement(`a`);
     const element = document.createElement(`img`);
     const div = document.createElement(`div`);

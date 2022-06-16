@@ -1,3 +1,4 @@
+// authorizing the api token to get access to the private posts on WordPress
 export const getToken = async () => {
     const res = await fetch('https://www.dgolubeva.com/wp-json/jwt-auth/v1/token', {
         method: 'POST',
