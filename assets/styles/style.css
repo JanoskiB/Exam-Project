@@ -649,7 +649,7 @@ input[type=text] {
   box-sizing: border-box;
   color: var(--green);
   padding: 12px 20px;
-  font-size: 1.5vw;
+  font-size: 1rem;
 }
 
 input[type=email] {
@@ -776,12 +776,12 @@ footer {
   padding-bottom: 20px;
 }
 
-.ft-column>span>ul>li {
+.ft-column>div>ul>li {
   padding-left: 0;
   padding-right: 0;
 }
 
-.ft-column>span>ul>li>a {
+.ft-column>div>ul>li>a {
   text-transform: none;
   font-size: 1rem;
   margin-left: 1rem;
