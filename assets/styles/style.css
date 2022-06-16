@@ -402,7 +402,6 @@ h1 {
 }
 
 .about-article>p{
-  padding-left: 5vw;
   padding-right: 5vw;
 }
 
@@ -426,9 +425,11 @@ h1 {
 
 .resume-wrap{
   width: 75vw;
-  height: 65vh;
+  height: 55vh;
   background-color: white;
   margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .resume-wrap>h2{
@@ -443,12 +444,13 @@ h1 {
 }
 
 .resume-grid>div>p{
-  padding-left: 3vw;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .resume-grid>div>p>img{
   position: relative;
-  top: 15px;
 }
 
 .resume-wrap>a>h3{
@@ -700,17 +702,6 @@ textarea {
 
 /* Footer */
 
-/* .footer-wrap-grid{
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.ft-column>span>ul>li{
-  display: inline;
-} */
-
 footer {
   width: 100vw;
   margin-top: 20vh;
@@ -720,7 +711,7 @@ footer {
 .ft-column>h4 {
   padding-left: 2.5rem;
   text-transform: uppercase;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
 }
 
 .footer-wrap-grid {
@@ -752,8 +743,7 @@ footer {
   text-transform: none;
   font-size: 1rem;
   margin-left: 1rem;
-  position: relative;
-  bottom: .5rem;
+  
 
 }
 
@@ -874,7 +864,7 @@ footer {
   }
 
   .about-article{
-    padding: 2rem 2rem;
+    padding:2rem;
   }
 
   .artist-image{
