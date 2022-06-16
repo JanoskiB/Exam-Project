@@ -789,6 +789,36 @@ footer {
   display: none;
 }
 
+@media screen and (max-width: 1360px) {
+  .resume-wrap{
+    height: 75vh;
+  }
+
+  .resume-wrap>h2{
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .resume-wrap{
+    font-size: .7rem;
+  }
+
+  .btn-about>h3{
+    font-size: 1rem;
+  }
+
+  .contact-footer>a>img{
+    width: 25px;
+  }
+
+  .logo-wrap-footer>img{
+    padding-right: 4rem;
+  }
+
+}
+
 @media screen and (max-width: 1150px) {
   .about-article>p {
     padding-left: 0;
@@ -931,6 +961,57 @@ footer {
     font-size: 1.3rem;
   }
 
+  .art-studies-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'aboutH2'
+      'artistImage'
+       'article';
+  }
+
+  .art-studies-grid>h2{
+    padding-left: 0;
+  }
+
+  .art-studies-grid>article{
+    width: 100%;
+  }
+
+  .art-studies-grid>article>p{
+    padding-right: 5vw;  
+  }
+  
+  .art-studies-image {
+    grid-area: artistImage;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.resume-wrap {
+  width: 80vw;
+  height: 80vh;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.resume-wrap>h2 {
+  padding-left: 3vw;
+  padding-top: 3vh;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
   .footer-wrap-grid {
     display: none;
   }
@@ -966,4 +1047,5 @@ footer {
   .footer.a{
     text-decoration: none;
   }
+  
 }
