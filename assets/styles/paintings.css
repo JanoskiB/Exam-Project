@@ -25,22 +25,18 @@ html{
 
 #list-canvas {
     columns: 2;
-    width: 65vw;
-    margin-left: 16.5vw;
-    margin-top: 5rem;
+    width: 58vw;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
-#list-camvas>div>img{
-  display: inline-block;
-}
-
-.column-left{
-   background-color: aqua;
+#list-canvas>div{
+    margin-top: 1rem;
 }
 
 #breadcrumbs{
     display: flex;
-    margin-left: 14rem;
+    margin-left: 20vw;
     margin-top: 3rem;
 }
 
@@ -49,7 +45,8 @@ html{
 }
 
 h2{
-    margin-left: 16rem;
+    margin-left: 21vw;
+    margin-top: 2rem;
 }
 
 #home-icon{
