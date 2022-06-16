@@ -619,7 +619,7 @@ h1 {
 }
 
 .contact-form {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
 }
 
 .contact-form>h2 {
@@ -628,42 +628,43 @@ h1 {
 }
 
 .form-wraps {
-  margin-top: 1.5rem;
+  margin-top: 1.5vw;
 }
 
 label {
   position: relative;
   bottom: 6px;
+  font-size: 2vw;
 }
 
 input[type=text] {
   width: 95%;
-  height: 3rem;
+  height: 4vw;
   box-sizing: border-box;
-  color: #000000;
+  color: var(--green);
   padding: 12px 20px;
-  font-size: 1.3rem;
+  font-size: 1.5vw;
 }
 
 input[type=email] {
   width: 95%;
-  height: 3rem;
+  height: 4vw;
   box-sizing: border-box;
-  color: #000000;
+  color: var(--green);
   padding: 12px 20px;
   font-size: 1.3rem;
 
 }
 
 input::placeholder {
-  font-size: 1.1rem;
+  font-size: 2vw;
   color: #453a496c;
 }
 
 button[type=submit] {
   text-transform: uppercase;
   color: var(--purple);
-  margin-top: 1rem;
+  margin: 1rem 0;
   border: 0;
   background-color: transparent;
   font-size: 1.4rem;
@@ -805,7 +806,13 @@ footer {
     padding-left: 0;
   }
 
+  .contact-grid{
+    grid-template-columns: auto;
+  }
 
+  .contact-img{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 820px) {
