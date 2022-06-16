@@ -222,6 +222,7 @@ h1 {
 }
 
 .btn-more {
+  padding-top: 1rem;
   text-decoration: none;
   color: var(--purple);
 }
@@ -352,16 +353,20 @@ h1 {
   grid-area: btnAbout;
 }
 
+
 .exh-h2 {
   margin-bottom: 2rem;
 }
 
+<<<<<<< Updated upstream
 .btn-exb {
   position: relative;
   left: 0;
   bottom: 0;
 }
 
+=======
+>>>>>>> Stashed changes
 .exhibitions-wrap {
   width: 70vw;
   margin: 0 auto;
@@ -689,6 +694,7 @@ button[type=submit]:hover {
   position: relative;
   top: 0px;
   left: 8px;
+  width: 10px;
 }
 
 textarea {
@@ -831,9 +837,12 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
+<<<<<<< Updated upstream
   .resume-wrap {
     font-size: .7rem;
   }
+=======
+>>>>>>> Stashed changes
 
   .btn-about>h3 {
     font-size: 1rem;
@@ -843,13 +852,31 @@ footer {
     width: 25px;
   }
 
+<<<<<<< Updated upstream
   .logo-wrap-footer>img {
     padding-right: 4rem;
+=======
+  .logo-wrap-footer>a>img{
+    padding-left: 3rem;
+  }
+
+  .resume-wrap {
+    height: 100vh;
+>>>>>>> Stashed changes
   }
 
 }
 
 @media screen and (max-width: 1150px) {
+
+  .resume-grid>div>p{
+ padding-right: 10px;
+  }
+
+  .resume-grid>div>p>img{
+    width: 10px;
+     }
+
   .about-article>p {
     padding-left: 0;
   }
@@ -918,6 +945,32 @@ footer {
       'paintings''drawings'
       'graphics''installations';
     margin: 0 auto;
+  }
+
+  .paintings-grid {
+    grid-template-areas:
+      'category-name-h2' 
+      'portrait' 'p-still-life'
+      'landscape' 'figurative'
+      'more-paintings' ;
+  }
+
+  .installations-grid {
+    grid-template-areas:
+      'category-installations-h2' 
+      'textile' 
+      'paper'
+      'fungi'
+      'more-installations';
+  }
+
+  .drawings-grid {
+    grid-template-areas:
+      'category-drawings-h2'      
+      'd-portrait'
+      'd-still-life'
+      'd-nude'
+      'more-drawings';
   }
 
   .categories-article {
@@ -1082,5 +1135,18 @@ footer {
   .footer.a {
     text-decoration: none;
   }
+<<<<<<< Updated upstream
 
+=======
+  
+}
+
+#toTop{
+  position: absolute;
+  right: 10px;
+  bottom:10px;
+  width: 80px;
+  position: fixed;
+  cursor: pointer;
+>>>>>>> Stashed changes
 }

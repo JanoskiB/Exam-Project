@@ -70,8 +70,8 @@ h2{
 
 #toTop{
     position: absolute;
-    right: 0;
-    top:300px;
+    right: 10px;
+    bottom:10px;
     width: 80px;
     position: fixed;
     cursor: pointer;
