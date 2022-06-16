@@ -828,14 +828,14 @@ footer {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 488px) {
 
   .btn-about>h3 {
     font-size: 1rem;
   }
 
   .contact-footer>a>img {
-    width: 25px;
+    width: 23px;
   }
 
   .logo-wrap-footer>a>img{
@@ -857,8 +857,7 @@ footer {
   .resume-grid>div>p>span{
     width: 20px;
     position: relative;
-    top:5px;
-     }
+    top:5px;}
 
   .about-article>p {
     padding-left: 0;
@@ -1096,10 +1095,6 @@ footer {
     margin: 0 auto;
     margin-bottom: 2rem;
     border-bottom: solid 1px var(--green);
-  }
-
-  .logo-wrap-footer>img {
-    margin-left: 20%;
   }
 
   .contact-footer {
