@@ -621,12 +621,12 @@ h1 {
 }
 
 .contact-form>p {
-  font-size: 1.8vw;
+  font-size: 1.2rem;
   padding-right: 5px;
 }
 
 .contact-form {
-  font-size: 1.2vw;
+  font-size: 1rem;
 }
 
 .contact-form>h2 {
@@ -635,13 +635,13 @@ h1 {
 }
 
 .form-wraps {
-  margin-top: 1.5vw;
+  margin-top: 1vw;
 }
 
 label {
   position: relative;
   bottom: 6px;
-  font-size: 2vw;
+  font-size: 1.3rem;
 }
 
 input[type=text] {
@@ -663,7 +663,7 @@ input[type=email] {
 }
 
 input::placeholder {
-  font-size: 2vw;
+  font-size: 1.1rem;
   color: #453a496c;
 }
 
