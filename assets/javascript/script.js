@@ -31,6 +31,9 @@ myImage.innerHTML = `<img src="${art.acf.picture.url}">`;
 // myArtYear.innerHTML = `${art.acf.year}`
 
 const myArtSize = document.querySelector(`#myArtSize`);
-myArtSize.innerHTML = `${art.acf.size} cm`
+myArtSize.innerHTML = `${art.acf.size} cm`;
+
+const myArtMedium = document.querySelector(`#myArtMedium`);
+myArtMedium.innerHTML = `${art.acf.medium}`;
 
 
