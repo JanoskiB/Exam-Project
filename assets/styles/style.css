@@ -358,15 +358,6 @@ h1 {
   margin-bottom: 2rem;
 }
 
-<<<<<<< Updated upstream
-.btn-exb {
-  position: relative;
-  left: 0;
-  bottom: 0;
-}
-
-=======
->>>>>>> Stashed changes
 .exhibitions-wrap {
   width: 70vw;
   margin: 0 auto;
@@ -837,12 +828,6 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
-<<<<<<< Updated upstream
-  .resume-wrap {
-    font-size: .7rem;
-  }
-=======
->>>>>>> Stashed changes
 
   .btn-about>h3 {
     font-size: 1rem;
@@ -852,17 +837,12 @@ footer {
     width: 25px;
   }
 
-<<<<<<< Updated upstream
-  .logo-wrap-footer>img {
-    padding-right: 4rem;
-=======
   .logo-wrap-footer>a>img{
     padding-left: 3rem;
   }
 
   .resume-wrap {
     height: 100vh;
->>>>>>> Stashed changes
   }
 
 }
@@ -1135,9 +1115,6 @@ footer {
   .footer.a {
     text-decoration: none;
   }
-<<<<<<< Updated upstream
-
-=======
   
 }
 
@@ -1148,5 +1125,4 @@ footer {
   width: 80px;
   position: fixed;
   cursor: pointer;
->>>>>>> Stashed changes
 }
