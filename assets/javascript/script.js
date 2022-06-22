@@ -12,15 +12,15 @@ const token = await getToken();
 
 //fetching the post ids from wordpress
 const getSingleArt = async (id, token) => await fetch(`https://www.dgolubeva.com/wp-json/wp/v2/posts/${id}?status=private`, {
-                method: 'GET',
-                headers: {
-                    //authenticate the wordpress token
-                    Authorization: `Bearer ${token}`
-                }
-            }).then(res => res.json());
+    method: 'GET',
+    headers: {
+        //authenticate the wordpress token
+        Authorization: `Bearer ${token}`
+    }
+}).then(res => res.json());
 
 // adding the post id to the url
-const {id} = getUrlParams();
+const { id } = getUrlParams();
 
 console.log(id)
 
