@@ -23,15 +23,15 @@ html{
     -o-transform: scale(1.01);
 }
 
-#list-canvas {
+.list-canvas {
     columns: 2;
     width: 58vw;
     margin: 0 auto;
     margin-top: 2rem;
 }
 
-#list-canvas>div{
-    margin-top: 1rem;
+.list-canvas>div{
+    margin: 1rem 0;
 }
 
 #breadcrumbs{

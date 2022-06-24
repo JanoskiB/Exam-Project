@@ -2,7 +2,7 @@
 import { getToken } from "./api.js";
 
 //targeting a div in the HTML
-const canvas = document.getElementById(`list-canvas`);
+const paintingsPortrait = document.getElementById(`list-paintingsPortraits`);
 
 //get the token ready
 const token = await getToken();
@@ -28,7 +28,7 @@ const getAllData = async ({page, url}, token) => {
      return allData;
 };
 //starting the counter again untill the are no more posts left to fetch
-const data = await getAllData({page: 100, url: `https://www.dgolubeva.com/wp-json/wp/v2/posts?status=private`}, token);
+const data = await getAllData({page: 100, url: `https://www.dgolubeva.com/wp-json/wp/v2/posts?categories=15&status=private`}, token);
 
 console.log(getAllData);
 
@@ -44,8 +44,6 @@ allPieces.forEach(x => {
     anchor.href = `single-art-page.html?id=${x.id}`
     anchor.appendChild(element);
     div.appendChild(anchor);
-    canvas.appendChild(div);
-
-
+    paintingsPortrait.appendChild(div);
 })
 
