@@ -1,8 +1,18 @@
+// abbreviations:
+// pnt - paintings
+// drw - drawings
+// exb - exhibitions
+// grph - graphics
+
+
 //importing a token to get access to the private wordpress posts
 import { getToken } from "./api.js";
 
 //targeting a div in the HTML
-const paintingsPortrait = document.getElementById(`list-paintingsPortraits`);
+const pntPortrait = document.getElementById(`list-pntPortraits`);
+// const ptnStillLife = document.getElementById(`list-pntStillLife`);
+// const ptnLandscape = document.getElementById(`list-ptnLandscape`);
+// const ptnFigurative = document.getElementById(`list-ptnFigurative`);
 
 //get the token ready
 const token = await getToken();
@@ -44,6 +54,27 @@ allPieces.forEach(x => {
     anchor.href = `single-art-page.html?id=${x.id}`
     anchor.appendChild(element);
     div.appendChild(anchor);
-    paintingsPortrait.appendChild(div);
+    pntPortrait.appendChild(div);
 })
 
+
+
+
+// const PiecesStillLife = data;
+// allPieces.forEach(x => {
+//     const anchor = document.createElement(`a`);
+//     const element = document.createElement(`img`);
+//     const div = document.createElement(`div`);
+//     element.classList.add(`painting`);
+
+//     element.src = x.acf.picture.url;
+//     anchor.href = `single-art-page.html?id=${x.id}`
+//     anchor.appendChild(element);
+//     div.appendChild(anchor);
+//     pntPortrait.appendChild(div);
+// })
+
+// async function getData(){
+//     await getAllData
+// }
+// const getPntStillLife = async fetch(`https://www.dgolubeva.com/wp-json/wp/v2/posts?categories=10&status=private`)
