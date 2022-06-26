@@ -1116,11 +1116,23 @@ footer {
   
 }
 
+@media screen and (max-width: 360px) {
+  .contact-footer>a>img {
+    width: 20px;
+  }
+}
+
+
 #toTop{
-  position: absolute;
-  right: 10px;
-  bottom:10px;
-  width: 80px;
+  display: none;
+  opacity: .75;
+  right: 2px;
+  bottom:2px;
+  width: 60px;
   position: fixed;
   cursor: pointer;
+}
+
+#toTop:hover{
+  opacity: 1;
 }
